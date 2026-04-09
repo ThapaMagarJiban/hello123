@@ -12,6 +12,14 @@ export const getWeblinksByRating = (req, res) => {
   res.json(filtered);
 };
 
+// Get only .com Weblinks
+export const getDotComWeblinks = (req, res) => {
+  const filtered = store.weblinks.filter(
+    w => typeof w.url === 'string' && w.url.toLowerCase().includes('.com')
+  );
+  res.json(filtered);
+};
+
 // Get by ID
 export const getWeblinkById = (req, res) => {
   const link = store.weblinks.find(w => w.id === parseInt(req.params.id));
