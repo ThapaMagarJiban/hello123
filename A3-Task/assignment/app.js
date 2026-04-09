@@ -19,4 +19,5 @@ app.get('/', (req, res) => {
 
 app.listen(3000, () => {
   console.log('Weblinks API running on http://localhost:3000');
+  console.log('API Docs available at http://localhost:3000/apidoc');
 });
