@@ -68,6 +68,9 @@ router.post('/', createWeblink);
  * @apiGroup Weblinks
  *
  * @apiParam {Number} id Weblink unique ID.
+ * @apiBody {String} [title] Updated weblink title.
+ * @apiBody {String} [url] Updated weblink URL.
+ * @apiBody {Number} [rating] Updated weblink rating.
  */
 router.put('/:id', updateWeblink);
 

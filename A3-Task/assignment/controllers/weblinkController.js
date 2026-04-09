@@ -14,9 +14,15 @@ export const getWeblinksByRating = (req, res) => {
 
 // Get only .com Weblinks
 export const getDotComWeblinks = (req, res) => {
-  const filtered = store.weblinks.filter(
-    w => typeof w.url === 'string' && w.url.toLowerCase().includes('.com')
-  );
+  const filtered = store.weblinks.filter(w => {
+    if (typeof w.url !== 'string') return false;
+    try {
+      const hostname = new URL(w.url).hostname.toLowerCase();
+      return hostname.endsWith('.com');
+    } catch {
+      return false;
+    }
+  });
   res.json(filtered);
 };
 
