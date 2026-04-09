@@ -1,0 +1,26 @@
+{
+  "name": "weblink",
+  "version": "1.0.0",
+  "description": "http://localhost:3000/weblinks",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^2.2.2",
+    "cors": "^2.8.6",
+    "express": "^5.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahul-loni/A3-Task-Complete.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rahul-loni/A3-Task-Complete/issues"
+  },
+  "homepage": "https://github.com/rahul-loni/A3-Task-Complete#readme"
+}
