@@ -20,6 +20,9 @@
   "devDependencies": {
     "apidoc": "^1.2.0"
   },
+  "overrides": {
+    "esbuild": "0.25.3"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rahul-loni/A3-Task-Complete.git"
